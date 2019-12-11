@@ -1,0 +1,36 @@
+.main-menu {
+  font-family: 'Oswald', sans-serif;
+}
+
+
+
+.main-menu__list {
+  display: none;
+  position: absolute;
+  width: 100%;
+  padding: 15px;
+  background-color: white;
+  left: 0;
+  box-shadow: 0 35px 35px rgba(0,0,0,.2);
+  z-index: 100;
+}
+
+.main-menu__item {
+  display: flex;
+  background-color: #C8A481;
+  padding: 10px;
+  margin-bottom: 1px;
+  a {
+    font-weight: 500;
+    font-size: 12.96px;
+    text-transform: uppercase;
+    color: white;
+  }
+}
+
+.main-menu__btn {
+  position: absolute;
+  right: 10px;
+  top: 5px;
+  outline: none;
+}

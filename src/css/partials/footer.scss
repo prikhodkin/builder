@@ -1,0 +1,72 @@
+.footer {
+  background: #3C3C3C;
+  padding: 20px 15px;
+  margin-top: 40px;
+  .logo {
+
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+.footer-menu__list {
+  display: none;
+}
+
+.footer-menu__item {
+  margin-bottom: 5px;
+  a {
+
+    font-family: Oswald;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12.96px;
+    line-height: 19px;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+    text-align: center;
+    display: block;
+  }
+}
+
+.footer__contacts-phone {
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+  /* identical to box height */
+  text-transform: uppercase;
+
+  color: #FFFFFF;
+  &::before {
+    content: '';
+    display: block;
+    background-image: url(../img/phone_i.png);
+    width: 17px;
+    height: 17px;
+    margin-right: 10px;
+  }
+}
+
+.footer__contacts-time {
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 19px;
+  /* identical to box height */
+  text-transform: uppercase;
+
+  color: #FFFFFF;
+  &::before {
+    content: '';
+    display: block;
+    background-image: url(../img/clock_i.png);
+    width: 19px;
+    height: 19px;
+    margin-right: 10px;
+  }
+}

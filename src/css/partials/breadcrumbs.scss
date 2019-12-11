@@ -1,0 +1,29 @@
+.breadcrumbs__item {
+  display: flex;
+  a {
+    font-weight: normal;
+    font-size: 12px;
+    text-transform: uppercase;
+
+    color: #828282;
+  }
+  &:not(:last-child) {
+    &::after {
+      content: '/';
+      display: block;
+      margin: 0 7px;
+      font-weight: normal;
+      font-size: 12px;
+      text-transform: uppercase;
+
+      color: #828282;
+    }
+  }
+}
+
+.breadcrumbs__list {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 15px;
+  justify-content: flex-end;
+}
