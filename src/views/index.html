@@ -59,25 +59,91 @@
         <p class="main__desc">В нашей базе более 200 качественных проектов домов. Оставьте заявку и специалист подберет Вам 10 проектов домов на выбор, по вашим параметрам.</p>
         <section class="filter">
           <h2 class="visually-hidden">Фильтры</h2>
-          <form action="#">
+          <button class="filter__show">Фильтры</button>
+          <form action="#" class="filter__form">
             <fieldset>
               <p class="filter__title">этажность</p>
               <div class="filter__inputs-wrapper">
-                <label class="filter__label">
-                  все
-                  <input type="checkbox" class="filter__input">
-                </label>
-                <label class="filter__label">
-                  1
-                  <input type="checkbox" class="filter__input">
-                </label>
-                <label class="filter__label">
-                  2
-                  <input type="checkbox" class="filter__input">
-                </label>
+                <input type="checkbox" class="filter__input" id="filter__1">
+                <label class="filter__label" for="filter__1">все</label>
+                <input type="checkbox" class="filter__input" id="filter__2">
+                <label class="filter__label" for="filter__2">1</label>
+                <input type="checkbox" class="filter__input" id="filter__3">
+                <label class="filter__label" for="filter__3">2</label>
+              </div>
+            </fieldset>
+            <fieldset>
+              <p class="filter__title">ОБЩАЯ ПЛОЩАДЬ ДОМА, В М2</p>
+              <div class="filter__inputs-wrapper">
+                <input type="checkbox" class="filter__input" id="filter__4">
+                <label class="filter__label" for="filter__4">все</label>
+                <input type="checkbox" class="filter__input" id="filter__5">
+                <label class="filter__label" for="filter__5">< 100</label>
+                <input type="checkbox" class="filter__input" id="filter__6">
+                <label class="filter__label" for="filter__6">100 - 500</label>
+                <input type="checkbox" class="filter__input" id="filter__7">
+                <label class="filter__label" for="filter__7">150 - 200</label>
+                <input type="checkbox" class="filter__input" id="filter__8">
+                <label class="filter__label" for="filter__8">> 100</label>
+              </div>
+            </fieldset>
+            <fieldset>
+              <p class="filter__title">УЧАСТОК (СОТОК)</p>
+              <div class="filter__inputs-wrapper">
+                <input type="checkbox" class="filter__input" id="filter__9">
+                <label class="filter__label" for="filter__9">все</label>
+                <input type="checkbox" class="filter__input" id="filter__10">
+                <label class="filter__label" for="filter__10">< 4</label>
+                <input type="checkbox" class="filter__input" id="filter__11">
+                <label class="filter__label" for="filter__11">4 - 6</label>
+                <input type="checkbox" class="filter__input" id="filter__12">
+                <label class="filter__label" for="filter__12">> 6</label>
               </div>
             </fieldset>
           </form>
+        </section>
+        <section class="projects">
+          <h2 class="visually-hidden">Список объектов</h2>
+          <ul class="projects__list list-style-none">
+            <li class="projects__item">
+              <div class="projects__item-content">
+                <img src="img/img.jpg" alt="">
+                <div class="projects__item-content-inner">
+                  <a href="">Проект 103</a>
+                  <div class="projects__item-content-info">
+                    <p class="projects__item-content-size">Размер - <span>8,9 х 7 м</span></p>
+                    <p class="projects__item-content-m-all">Общая - <span> 103  кв.м.</span></p>
+                    <p class="projects__item-content-m">Жилая - <span>70,3 кв.м.</span></p>
+                  </div>
+                </div>
+              </div>
+              <div class="projects__item-hover" style="background-image: url(../img/img.jpg)">
+                <ul class="projects__icons list-style-none">
+                  <li class="projects__icon" style="background-image: url(../img/thumbs_up.png);">
+                    <p class="projects__icon-info">Хит продаж</p>
+                  </li>
+                  <li class="projects__icon" style="background-image: url(../img/flag.png)">
+                    <p class="projects__icon-info">Построен</p>
+                  </li>
+                  <li class="projects__icon" style="background-image: url(../img/ring.png)">
+                    <p class="projects__icon-info">Звонок</p>
+                  </li>
+                </ul>
+                <div class="projects__item-content-inner">
+                  <a href="">Проект 103</a>
+                  <div class="projects__item-content-info">
+                    <p class="projects__item-content-size">Размер - <span>8,9 х 7 м</span></p>
+                    <p class="projects__item-content-m-all">Общая - <span> 103  кв.м.</span></p>
+                    <p class="projects__item-content-m">Жилая - <span>70,3 кв.м.</span></p>
+                  </div>
+                  <div class="projects__item-content-more">
+                    <div class="icon" style="background-image: url(../img/photo_i.png)"></div>
+                    <a href="" class="main__btn">все о проекте</a>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
         </section>
         <section class="pagination">
           <h2 class="visually-hidden">Пагинация</h2>

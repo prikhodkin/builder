@@ -1,0 +1,78 @@
+.filter {
+  padding: 20px 15px;
+  background: #3C3C3C;
+}
+
+.filter__show {
+  color: white;
+  display: flex;
+  justify-content: center;
+  text-transform: uppercase;
+  border: none;
+  background: transparent;
+  padding: 0;
+  width: 100%;
+  margin: 20px 0;
+  align-items: center;
+  outline: none;
+  &::after {
+    content: '';
+    display: block;
+    background-image: url(../../img/filter.png);
+    width: 16px;
+    height: 10px;
+    margin-left: 10px;
+  }
+}
+
+.filter__form {
+  display: none;
+  fieldset {
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    border: 0;
+    padding: 0;
+    margin: 0;
+  }
+}
+
+.filter__title {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 15px;
+  /* identical to box height */
+
+  color: #FFFFFF;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.filter__inputs-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.filter__label {
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  /* identical to box height */
+
+  color: #FFFFFF;
+  padding: 10px 20px;
+  display: inline-block;
+  text-align: center;
+  transition: all 0.3s;
+}
+
+.filter__input {
+  position: absolute;
+  left: -9999px;
+  &:checked + label {
+    color: #C8A481;
+  }
+}
+
+
