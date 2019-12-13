@@ -76,3 +76,46 @@
 }
 
 
+@media (min-width: 1170px) {
+  .filter {
+    padding: 30px 0;
+    padding-left: calc(50% - 585px);
+    padding-right: calc(50% - 585px);
+  }
+
+  .filter__show {
+    display: none;
+  }
+
+  .filter__form {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .filter__inputs-wrapper {
+    flex-direction: row;
+    .filter__label {
+      &:not(:last-child) {
+        margin-right: 10px;
+      }
+    }
+  }
+
+  .filter__label {
+    background: #535353;
+    border-radius: 20px;
+    text-transform: uppercase;
+  }
+
+  .filter__title {
+    margin: 0 0 20px 0;
+  }
+
+  .filter__input {
+    &:checked + label {
+      color: white;
+      background-color: #C8A481;
+    }
+  }
+
+}

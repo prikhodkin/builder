@@ -16,7 +16,7 @@
     &::after {
       content: '';
       display: block;
-      background-image: url(../../img/form_arrow.png);
+      background-image: url(../img/form_arrow.png);
       width: 14px;
       height: 14px;
       margin-left: 10px;
@@ -123,5 +123,54 @@
 
     color: #999999;
 
+  }
+}
+
+@media (min-width: 1170px) {
+  .callback {
+    padding-left: calc(50% - 585px);
+    padding-right: calc(50% - 585px);
+    overflow-x: hidden;
+    form {
+      padding-bottom: 50px;
+    }
+    .main__title-wrapper {
+      justify-content: center;
+      min-height: 160px;
+      overflow: unset;
+    }
+
+    .main__title-shadow {
+      font-size: 160px;
+      left: 50%;
+      top: 0;
+    }
+  }
+
+  .callback__inner {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    .r {
+      display: flex;
+      margin-top: 0;
+    }
+  }
+
+  .callback__inputs-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 510px;
+  }
+
+  .callback__input {
+    width: 245px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+  }
+
+  .callback__textarea {
+    width: 245px;
+    min-width: 245px;
   }
 }

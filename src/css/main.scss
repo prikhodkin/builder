@@ -51,6 +51,10 @@ a {
   border-radius: 30px;
   padding: 17.5px 20px;
   text-transform: uppercase;
+  transition: all 0.3s;
+  &:hover {
+    background: #323232;
+  }
 }
 
 .main__title-wrapper {
@@ -99,4 +103,19 @@ a {
   /* or 144% */
 
   color: #3A3A3A;
+}
+
+
+@media (min-width: 1170px) {
+  .main__desc {
+    max-width: 760px;
+    margin-bottom: 40px;
+    padding-left: calc(50% - 585px);
+    box-sizing: unset;
+  }
+
+  .main__title-wrapper {
+    padding-left: calc(50% - 585px);
+    padding-right: calc(50% - 585px);
+  }
 }

@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Шаблон</title>
     <meta name="theme-color" content="">
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="viewport" content="initial-scale=1.0, width=device-width">
     <link rel="shortcut icon" href="img/favicons/favicon.ico" type="image/x-icon">
     <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png">
     <link rel="apple-touch-icon" sizes="57x57" href="img/favicons/apple-touch-icon-57x57.png">
@@ -16,13 +16,13 @@
     <link rel="apple-touch-icon" sizes="144x144" href="img/favicons/apple-touch-icon-144x144.png">
     <link rel="apple-touch-icon" sizes="152x152" href="img/favicons/apple-touch-icon-152x152.png">
     <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon-180x180.png">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700|Oswald:400,500,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700%7COswald:400,500,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
   </head>
   <body>
     <header class="header">
       <a href="" class="logo">
-        <img src="../img/logo.png" alt="">
+        <img src="img/logo.png" alt="">
       </a>
       <nav class="main-menu">
         <button class="main-menu__btn cmn-toggle-switch cmn-toggle-switch__htx">
@@ -64,7 +64,7 @@
             <fieldset>
               <p class="filter__title">этажность</p>
               <div class="filter__inputs-wrapper">
-                <input type="checkbox" class="filter__input" id="filter__1">
+                <input type="checkbox" class="filter__input" id="filter__1" checked>
                 <label class="filter__label" for="filter__1">все</label>
                 <input type="checkbox" class="filter__input" id="filter__2">
                 <label class="filter__label" for="filter__2">1</label>
@@ -75,10 +75,10 @@
             <fieldset>
               <p class="filter__title">ОБЩАЯ ПЛОЩАДЬ ДОМА, В М2</p>
               <div class="filter__inputs-wrapper">
-                <input type="checkbox" class="filter__input" id="filter__4">
+                <input type="checkbox" class="filter__input" id="filter__4" checked>
                 <label class="filter__label" for="filter__4">все</label>
                 <input type="checkbox" class="filter__input" id="filter__5">
-                <label class="filter__label" for="filter__5">< 100</label>
+                <label class="filter__label" for="filter__5">&lt; 100</label>
                 <input type="checkbox" class="filter__input" id="filter__6">
                 <label class="filter__label" for="filter__6">100 - 500</label>
                 <input type="checkbox" class="filter__input" id="filter__7">
@@ -90,10 +90,10 @@
             <fieldset>
               <p class="filter__title">УЧАСТОК (СОТОК)</p>
               <div class="filter__inputs-wrapper">
-                <input type="checkbox" class="filter__input" id="filter__9">
+                <input type="checkbox" class="filter__input" id="filter__9" checked>
                 <label class="filter__label" for="filter__9">все</label>
                 <input type="checkbox" class="filter__input" id="filter__10">
-                <label class="filter__label" for="filter__10">< 4</label>
+                <label class="filter__label" for="filter__10">&lt; 4</label>
                 <input type="checkbox" class="filter__input" id="filter__11">
                 <label class="filter__label" for="filter__11">4 - 6</label>
                 <input type="checkbox" class="filter__input" id="filter__12">
@@ -117,15 +117,15 @@
                   </div>
                 </div>
               </div>
-              <div class="projects__item-hover" style="background-image: url(../img/img.jpg)">
+              <div class="projects__item-hover" style="background-image: url(img/img.jpg)">
                 <ul class="projects__icons list-style-none">
-                  <li class="projects__icon" style="background-image: url(../img/thumbs_up.png);">
+                  <li class="projects__icon" style="background-image: url(img/thumbs_up.png);">
                     <p class="projects__icon-info">Хит продаж</p>
                   </li>
-                  <li class="projects__icon" style="background-image: url(../img/flag.png)">
+                  <li class="projects__icon" style="background-image: url(img/flag.png)">
                     <p class="projects__icon-info">Построен</p>
                   </li>
-                  <li class="projects__icon" style="background-image: url(../img/ring.png)">
+                  <li class="projects__icon" style="background-image: url(img/ring.png)">
                     <p class="projects__icon-info">Звонок</p>
                   </li>
                 </ul>
@@ -137,7 +137,121 @@
                     <p class="projects__item-content-m">Жилая - <span>70,3 кв.м.</span></p>
                   </div>
                   <div class="projects__item-content-more">
-                    <div class="icon" style="background-image: url(../img/photo_i.png)"></div>
+                    <div class="icon" style="background-image: url(img/photo_i.png)"></div>
+                    <a href="" class="main__btn">все о проекте</a>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="projects__item">
+              <div class="projects__item-content">
+                <img src="img/img.jpg" alt="">
+                <div class="projects__item-content-inner">
+                  <a href="">Проект 103</a>
+                  <div class="projects__item-content-info">
+                    <p class="projects__item-content-size">Размер - <span>8,9 х 7 м</span></p>
+                    <p class="projects__item-content-m-all">Общая - <span> 103  кв.м.</span></p>
+                    <p class="projects__item-content-m">Жилая - <span>70,3 кв.м.</span></p>
+                  </div>
+                </div>
+              </div>
+              <div class="projects__item-hover" style="background-image: url(img/img.jpg)">
+                <ul class="projects__icons list-style-none">
+                  <li class="projects__icon" style="background-image: url(img/thumbs_up.png);">
+                    <p class="projects__icon-info">Хит продаж</p>
+                  </li>
+                  <li class="projects__icon" style="background-image: url(img/flag.png)">
+                    <p class="projects__icon-info">Построен</p>
+                  </li>
+                  <li class="projects__icon" style="background-image: url(img/ring.png)">
+                    <p class="projects__icon-info">Звонок</p>
+                  </li>
+                </ul>
+                <div class="projects__item-content-inner">
+                  <a href="">Проект 103</a>
+                  <div class="projects__item-content-info">
+                    <p class="projects__item-content-size">Размер - <span>8,9 х 7 м</span></p>
+                    <p class="projects__item-content-m-all">Общая - <span> 103  кв.м.</span></p>
+                    <p class="projects__item-content-m">Жилая - <span>70,3 кв.м.</span></p>
+                  </div>
+                  <div class="projects__item-content-more">
+                    <div class="icon" style="background-image: url(img/photo_i.png)"></div>
+                    <a href="" class="main__btn">все о проекте</a>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="projects__item">
+              <div class="projects__item-content">
+                <img src="img/img.jpg" alt="">
+                <div class="projects__item-content-inner">
+                  <a href="">Проект 103</a>
+                  <div class="projects__item-content-info">
+                    <p class="projects__item-content-size">Размер - <span>8,9 х 7 м</span></p>
+                    <p class="projects__item-content-m-all">Общая - <span> 103  кв.м.</span></p>
+                    <p class="projects__item-content-m">Жилая - <span>70,3 кв.м.</span></p>
+                  </div>
+                </div>
+              </div>
+              <div class="projects__item-hover" style="background-image: url(img/img.jpg)">
+                <ul class="projects__icons list-style-none">
+                  <li class="projects__icon" style="background-image: url(img/thumbs_up.png);">
+                    <p class="projects__icon-info">Хит продаж</p>
+                  </li>
+                  <li class="projects__icon" style="background-image: url(img/flag.png)">
+                    <p class="projects__icon-info">Построен</p>
+                  </li>
+                  <li class="projects__icon" style="background-image: url(img/ring.png)">
+                    <p class="projects__icon-info">Звонок</p>
+                  </li>
+                </ul>
+                <div class="projects__item-content-inner">
+                  <a href="">Проект 103</a>
+                  <div class="projects__item-content-info">
+                    <p class="projects__item-content-size">Размер - <span>8,9 х 7 м</span></p>
+                    <p class="projects__item-content-m-all">Общая - <span> 103  кв.м.</span></p>
+                    <p class="projects__item-content-m">Жилая - <span>70,3 кв.м.</span></p>
+                  </div>
+                  <div class="projects__item-content-more">
+                    <div class="icon" style="background-image: url(img/photo_i.png)"></div>
+                    <a href="" class="main__btn">все о проекте</a>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="projects__item">
+              <div class="projects__item-content">
+                <img src="img/img.jpg" alt="">
+                <div class="projects__item-content-inner">
+                  <a href="">Проект 103</a>
+                  <div class="projects__item-content-info">
+                    <p class="projects__item-content-size">Размер - <span>8,9 х 7 м</span></p>
+                    <p class="projects__item-content-m-all">Общая - <span> 103  кв.м.</span></p>
+                    <p class="projects__item-content-m">Жилая - <span>70,3 кв.м.</span></p>
+                  </div>
+                </div>
+              </div>
+              <div class="projects__item-hover" style="background-image: url(img/img.jpg)">
+                <ul class="projects__icons list-style-none">
+                  <li class="projects__icon" style="background-image: url(img/thumbs_up.png);">
+                    <p class="projects__icon-info">Хит продаж</p>
+                  </li>
+                  <li class="projects__icon" style="background-image: url(img/flag.png)">
+                    <p class="projects__icon-info">Построен</p>
+                  </li>
+                  <li class="projects__icon" style="background-image: url(img/ring.png)">
+                    <p class="projects__icon-info">Звонок</p>
+                  </li>
+                </ul>
+                <div class="projects__item-content-inner">
+                  <a href="">Проект 103</a>
+                  <div class="projects__item-content-info">
+                    <p class="projects__item-content-size">Размер - <span>8,9 х 7 м</span></p>
+                    <p class="projects__item-content-m-all">Общая - <span> 103  кв.м.</span></p>
+                    <p class="projects__item-content-m">Жилая - <span>70,3 кв.м.</span></p>
+                  </div>
+                  <div class="projects__item-content-more">
+                    <div class="icon" style="background-image: url(img/photo_i.png)"></div>
                     <a href="" class="main__btn">все о проекте</a>
                   </div>
                 </div>
@@ -175,7 +289,7 @@
                   <input type="text" class="callback__input" placeholder="Имя">
                   <input type="text" class="callback__input" placeholder="Имя">
                 </div>
-                <textarea name="" id="" cols="30" rows="10" class="callback__textarea" placeholder="Сообщение"></textarea>
+                <textarea cols="30" rows="10" class="callback__textarea" placeholder="Сообщение"></textarea>
               </div>
             </div>
             <button type="submit" class="main__btn">отправить</button>
@@ -185,7 +299,7 @@
     </main>
     <footer class="footer">
       <a href="" class="logo">
-        <img src="../img/logo_footer.png" alt="">
+        <img src="img/logo_footer.png" alt="">
       </a>
       <ul class="footer-menu__list list-style-none">
         <li class="footer-menu__item"><a href="">УЧАСТКИ</a></li>
@@ -200,9 +314,9 @@
         <a href="" class="footer__contacts-phone">+7 495 150 54 96</a>
         <p class="footer__contacts-time">еЖЕДНЕВНО С 9:00 - 21:00</p>
         <ul class="social__list list-style-none">
-          <li class="social__item"><a href="" style="background-image: url(../img/yt_i.png)"></a></li>
-          <li class="social__item"><a href="" style="background-image: url(../img/inst_i.png)"></a></li>
-          <li class="social__item"><a href="" style="background-image: url(../img/vk_i.png)"></a></li>
+          <li class="social__item"><a href="" style="background-image: url(img/yt_i.png)"></a></li>
+          <li class="social__item"><a href="" style="background-image: url(img/inst_i.png)"></a></li>
+          <li class="social__item"><a href="" style="background-image: url(img/vk_i.png)"></a></li>
         </ul>
       </div>
       <p class="copyright">© gALEX.Inc 2019. all Rights Reserved.</p>

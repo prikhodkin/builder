@@ -43,3 +43,15 @@
     }
   }
 }
+
+@media (min-width: 1170px) {
+  .pagination {
+    padding-right: calc(50% - 585px);
+    margin: 100px 0 80px 0;
+  }
+
+  .pagination__list {
+    max-width: 700px;
+    margin-left: auto;
+  }
+}

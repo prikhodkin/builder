@@ -34,3 +34,33 @@
   top: 5px;
   outline: none;
 }
+
+@media (min-width: 1170px) {
+  .main-menu__btn {
+    display: none;
+  }
+
+  .main-menu__list {
+    display: flex;
+    position: relative;
+    box-shadow: none;
+    padding: 0;
+  }
+
+  .main-menu__item {
+    background-color: transparent;
+    padding: 0;
+    margin-right: 45px;
+    a {
+      color: #232323;
+      transition: all 0.3s;
+      &:hover {
+        color: #C8A481;
+      }
+    }
+  }
+
+  .main-menu {
+    margin-left: auto;
+  }
+}
