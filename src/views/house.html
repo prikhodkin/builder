@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Шаблон</title>
+  <meta name="theme-color" content="">
+  <meta name="viewport" content="initial-scale=1.0, width=device-width">
+  <link rel="shortcut icon" href="img/favicons/favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png">
+  <link rel="apple-touch-icon" sizes="57x57" href="img/favicons/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="img/favicons/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="img/favicons/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="img/favicons/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="img/favicons/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="img/favicons/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="img/favicons/apple-touch-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon-180x180.png">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700%7COswald:400,500,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+//= blocks/header.html
+<main>
+  <section class="breadcrumbs">
+    <h2 class="visually-hidden">Хлебные крошки</h2>
+    <ul class="breadcrumbs__list list-style-none">
+      <li class="breadcrumbs__item"><a href="">Главная</a></li>
+      <li class="breadcrumbs__item"><a href="">Проекты</a></li>
+    </ul>
+  </section>
+  <section class="layout">
+    <div class="main__title-wrapper">
+      <h1 class="main__title">дома</h1>
+      <span class="main__title-shadow">дома</span>
+    </div>
+    <p class="main__desc">В нашей базе более 200 качественных проектов домов. Оставьте заявку и специалист подберет Вам 10 проектов домов на выбор, по вашим параметрам.</p>
+    <section class="filter">
+      <h2 class="visually-hidden">Фильтры</h2>
+      <button class="filter__show">Фильтры</button>
+      <form action="#" class="filter__form">
+        <fieldset>
+          <p class="filter__title">этажность</p>
+          <div class="filter__inputs-wrapper">
+            <input type="checkbox" class="filter__input" id="filter__1" checked>
+            <label class="filter__label" for="filter__1">все</label>
+            <input type="checkbox" class="filter__input" id="filter__2">
+            <label class="filter__label" for="filter__2">1</label>
+            <input type="checkbox" class="filter__input" id="filter__3">
+            <label class="filter__label" for="filter__3">2</label>
+          </div>
+        </fieldset>
+        <fieldset>
+          <p class="filter__title">ОБЩАЯ ПЛОЩАДЬ ДОМА, В М2</p>
+          <div class="filter__inputs-wrapper">
+            <input type="checkbox" class="filter__input" id="filter__4" checked>
+            <label class="filter__label" for="filter__4">все</label>
+            <input type="checkbox" class="filter__input" id="filter__5">
+            <label class="filter__label" for="filter__5">&lt; 100</label>
+            <input type="checkbox" class="filter__input" id="filter__6">
+            <label class="filter__label" for="filter__6">100 - 500</label>
+            <input type="checkbox" class="filter__input" id="filter__7">
+            <label class="filter__label" for="filter__7">150 - 200</label>
+            <input type="checkbox" class="filter__input" id="filter__8">
+            <label class="filter__label" for="filter__8">> 100</label>
+          </div>
+        </fieldset>
+        <fieldset>
+          <p class="filter__title">УЧАСТОК (СОТОК)</p>
+          <div class="filter__inputs-wrapper">
+            <input type="checkbox" class="filter__input" id="filter__9" checked>
+            <label class="filter__label" for="filter__9">все</label>
+            <input type="checkbox" class="filter__input" id="filter__10">
+            <label class="filter__label" for="filter__10">&lt; 4</label>
+            <input type="checkbox" class="filter__input" id="filter__11">
+            <label class="filter__label" for="filter__11">4 - 6</label>
+            <input type="checkbox" class="filter__input" id="filter__12">
+            <label class="filter__label" for="filter__12">> 6</label>
+          </div>
+        </fieldset>
+      </form>
+    </section>
+    <section class="projects">
+      <h2 class="visually-hidden">Список объектов</h2>
+      <ul class="projects__list list-style-none">
+        <li class="projects__item">
+          <div class="projects__item-content">
+            <img src="img/img.jpg" alt="">
+            <div class="projects__item-content-inner">
+              <a href="">Проект 103 (Семигорский)</a>
+              <div class="projects__item-content-info">
+                <p class="projects__item-content-size">Размер - <span>8,9 х 7 м</span></p>
+                <p class="projects__item-content-m-all">Общая - <span> 103  кв.м.</span></p>
+                <p class="projects__item-content-m">Жилая - <span>70,3 кв.м.</span></p>
+              </div>
+            </div>
+            <ul class="projects__icons list-style-none">
+              <li class="projects__icon" style="background-image: url(img/thumbs_up.png);">
+                <p class="projects__icon-info">Хит продаж</p>
+              </li>
+              <li class="projects__icon" style="background-image: url(img/flag.png)">
+                <p class="projects__icon-info">Построен</p>
+              </li>
+              <li class="projects__icon" style="background-image: url(img/ring.png)">
+                <p class="projects__icon-info">Звонок</p>
+              </li>
+            </ul>
+          </div>
+          <div class="projects__item-hover" style="background-image: url(img/img.jpg)">
+            <div class="projects__item-content-inner">
+              <a href="">Проект 103</a>
+              <div class="projects__item-content-info">
+                <p class="projects__item-content-size">Размер - <span>8,9 х 7 м</span></p>
+                <p class="projects__item-content-m-all">Общая - <span> 103  кв.м.</span></p>
+                <p class="projects__item-content-m">Жилая - <span>70,3 кв.м.</span></p>
+              </div>
+              <div class="projects__item-content-more">
+                <div class="icon" style="background-image: url(img/photo_i.png)"></div>
+                <a href="" class="main__btn">все о проекте</a>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="projects__item">
+          <div class="projects__item-content">
+            <img src="img/img.jpg" alt="">
+            <div class="projects__item-content-inner">
+              <a href="">Проект 103 (Семигорский)</a>
+              <div class="projects__item-content-info">
+                <p class="projects__item-content-size">Размер - <span>8,9 х 7 м</span></p>
+                <p class="projects__item-content-m-all">Общая - <span> 103  кв.м.</span></p>
+                <p class="projects__item-content-m">Жилая - <span>70,3 кв.м.</span></p>
+              </div>
+            </div>
+            <ul class="projects__icons list-style-none">
+              <li class="projects__icon" style="background-image: url(img/thumbs_up.png);">
+                <p class="projects__icon-info">Хит продаж</p>
+              </li>
+              <li class="projects__icon" style="background-image: url(img/flag.png)">
+                <p class="projects__icon-info">Построен</p>
+              </li>
+              <li class="projects__icon" style="background-image: url(img/ring.png)">
+                <p class="projects__icon-info">Звонок</p>
+              </li>
+            </ul>
+          </div>
+          <div class="projects__item-hover" style="background-image: url(img/img.jpg)">
+            <div class="projects__item-content-inner">
+              <a href="">Проект 103</a>
+              <div class="projects__item-content-info">
+                <p class="projects__item-content-size">Размер - <span>8,9 х 7 м</span></p>
+                <p class="projects__item-content-m-all">Общая - <span> 103  кв.м.</span></p>
+                <p class="projects__item-content-m">Жилая - <span>70,3 кв.м.</span></p>
+              </div>
+              <div class="projects__item-content-more">
+                <div class="icon" style="background-image: url(img/photo_i.png)"></div>
+                <a href="" class="main__btn">все о проекте</a>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="projects__item">
+          <div class="projects__item-content">
+            <img src="img/img.jpg" alt="">
+            <div class="projects__item-content-inner">
+              <a href="">Проект 103 (Семигорский)</a>
+              <div class="projects__item-content-info">
+                <p class="projects__item-content-size">Размер - <span>8,9 х 7 м</span></p>
+                <p class="projects__item-content-m-all">Общая - <span> 103  кв.м.</span></p>
+                <p class="projects__item-content-m">Жилая - <span>70,3 кв.м.</span></p>
+              </div>
+            </div>
+            <ul class="projects__icons list-style-none">
+              <li class="projects__icon" style="background-image: url(img/thumbs_up.png);">
+                <p class="projects__icon-info">Хит продаж</p>
+              </li>
+              <li class="projects__icon" style="background-image: url(img/flag.png)">
+                <p class="projects__icon-info">Построен</p>
+              </li>
+              <li class="projects__icon" style="background-image: url(img/ring.png)">
+                <p class="projects__icon-info">Звонок</p>
+              </li>
+            </ul>
+          </div>
+          <div class="projects__item-hover" style="background-image: url(img/img.jpg)">
+            <div class="projects__item-content-inner">
+              <a href="">Проект 103</a>
+              <div class="projects__item-content-info">
+                <p class="projects__item-content-size">Размер - <span>8,9 х 7 м</span></p>
+                <p class="projects__item-content-m-all">Общая - <span> 103  кв.м.</span></p>
+                <p class="projects__item-content-m">Жилая - <span>70,3 кв.м.</span></p>
+              </div>
+              <div class="projects__item-content-more">
+                <div class="icon" style="background-image: url(img/photo_i.png)"></div>
+                <a href="" class="main__btn">все о проекте</a>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="projects__item">
+          <div class="projects__item-content">
+            <img src="img/img.jpg" alt="">
+            <div class="projects__item-content-inner">
+              <a href="">Проект 103 (Семигорский)</a>
+              <div class="projects__item-content-info">
+                <p class="projects__item-content-size">Размер - <span>8,9 х 7 м</span></p>
+                <p class="projects__item-content-m-all">Общая - <span> 103  кв.м.</span></p>
+                <p class="projects__item-content-m">Жилая - <span>70,3 кв.м.</span></p>
+              </div>
+            </div>
+            <ul class="projects__icons list-style-none">
+              <li class="projects__icon" style="background-image: url(img/thumbs_up.png);">
+                <p class="projects__icon-info">Хит продаж</p>
+              </li>
+              <li class="projects__icon" style="background-image: url(img/flag.png)">
+                <p class="projects__icon-info">Построен</p>
+              </li>
+              <li class="projects__icon" style="background-image: url(img/ring.png)">
+                <p class="projects__icon-info">Звонок</p>
+              </li>
+            </ul>
+          </div>
+          <div class="projects__item-hover" style="background-image: url(img/img.jpg)">
+            <div class="projects__item-content-inner">
+              <a href="">Проект 103</a>
+              <div class="projects__item-content-info">
+                <p class="projects__item-content-size">Размер - <span>8,9 х 7 м</span></p>
+                <p class="projects__item-content-m-all">Общая - <span> 103  кв.м.</span></p>
+                <p class="projects__item-content-m">Жилая - <span>70,3 кв.м.</span></p>
+              </div>
+              <div class="projects__item-content-more">
+                <div class="icon" style="background-image: url(img/photo_i.png)"></div>
+                <a href="" class="main__btn">все о проекте</a>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="projects__item">
+          <div class="projects__item-content">
+            <img src="img/img.jpg" alt="">
+            <div class="projects__item-content-inner">
+              <a href="">Проект 103 (Семигорский)</a>
+              <div class="projects__item-content-info">
+                <p class="projects__item-content-size">Размер - <span>8,9 х 7 м</span></p>
+                <p class="projects__item-content-m-all">Общая - <span> 103  кв.м.</span></p>
+                <p class="projects__item-content-m">Жилая - <span>70,3 кв.м.</span></p>
+              </div>
+            </div>
+            <ul class="projects__icons list-style-none">
+              <li class="projects__icon" style="background-image: url(img/thumbs_up.png);">
+                <p class="projects__icon-info">Хит продаж</p>
+              </li>
+              <li class="projects__icon" style="background-image: url(img/flag.png)">
+                <p class="projects__icon-info">Построен</p>
+              </li>
+              <li class="projects__icon" style="background-image: url(img/ring.png)">
+                <p class="projects__icon-info">Звонок</p>
+              </li>
+            </ul>
+          </div>
+          <div class="projects__item-hover" style="background-image: url(img/img.jpg)">
+            <div class="projects__item-content-inner">
+              <a href="">Проект 103</a>
+              <div class="projects__item-content-info">
+                <p class="projects__item-content-size">Размер - <span>8,9 х 7 м</span></p>
+                <p class="projects__item-content-m-all">Общая - <span> 103  кв.м.</span></p>
+                <p class="projects__item-content-m">Жилая - <span>70,3 кв.м.</span></p>
+              </div>
+              <div class="projects__item-content-more">
+                <div class="icon" style="background-image: url(img/photo_i.png)"></div>
+                <a href="" class="main__btn">все о проекте</a>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="projects__item">
+          <div class="projects__item-content">
+            <img src="img/img.jpg" alt="">
+            <div class="projects__item-content-inner">
+              <a href="">Проект 103 (Семигорский)</a>
+              <div class="projects__item-content-info">
+                <p class="projects__item-content-size">Размер - <span>8,9 х 7 м</span></p>
+                <p class="projects__item-content-m-all">Общая - <span> 103  кв.м.</span></p>
+                <p class="projects__item-content-m">Жилая - <span>70,3 кв.м.</span></p>
+              </div>
+            </div>
+            <ul class="projects__icons list-style-none">
+              <li class="projects__icon" style="background-image: url(img/thumbs_up.png);">
+                <p class="projects__icon-info">Хит продаж</p>
+              </li>
+              <li class="projects__icon" style="background-image: url(img/flag.png)">
+                <p class="projects__icon-info">Построен</p>
+              </li>
+              <li class="projects__icon" style="background-image: url(img/ring.png)">
+                <p class="projects__icon-info">Звонок</p>
+              </li>
+            </ul>
+          </div>
+          <div class="projects__item-hover" style="background-image: url(img/img.jpg)">
+            <div class="projects__item-content-inner">
+              <a href="">Проект 103</a>
+              <div class="projects__item-content-info">
+                <p class="projects__item-content-size">Размер - <span>8,9 х 7 м</span></p>
+                <p class="projects__item-content-m-all">Общая - <span> 103  кв.м.</span></p>
+                <p class="projects__item-content-m">Жилая - <span>70,3 кв.м.</span></p>
+              </div>
+              <div class="projects__item-content-more">
+                <div class="icon" style="background-image: url(img/photo_i.png)"></div>
+                <a href="" class="main__btn">все о проекте</a>
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </section>
+    <section class="pagination">
+      <h2 class="visually-hidden">Пагинация</h2>
+      <ul class="pagination__list list-style-none">
+        <li class="pagination__item pagination__item--active"><a href="">1</a></li>
+        <li class="pagination__item"><a href="">2</a></li>
+        <li class="pagination__item"><a href="">3</a></li>
+        <li class="pagination__item"><a href="">4</a></li>
+        <li class="pagination__item"><a href="">5</a></li>
+        <li class="pagination__item pagination__item--next"><a href=""></a></li>
+      </ul>
+    </section>
+    <section class="callback">
+      <div class="main__title-wrapper">
+        <h2 class="main__title">Нажмите <span>на кнопку</span></h2>
+        <span class="main__title-shadow">связаться</span>
+      </div>
+      <form action="#">
+        <div class="callback__inner">
+          <div class="l">
+            <a href="">+7 (777) 777-7777</a>
+            <a href="">info@GALEX.COM</a>
+            <p>Краснодарский край, Новороссийск</p>
+          </div>
+          <div class="r">
+            <div class="callback__inputs-wrapper">
+              <input type="text" class="callback__input" placeholder="Имя">
+              <input type="text" class="callback__input" placeholder="Имя">
+              <input type="text" class="callback__input" placeholder="Имя">
+              <input type="text" class="callback__input" placeholder="Имя">
+            </div>
+            <textarea cols="30" rows="10" class="callback__textarea" placeholder="Сообщение"></textarea>
+          </div>
+        </div>
+        <button type="submit" class="main__btn">отправить</button>
+      </form>
+    </section>
+  </section>
+</main>
+//= blocks/footer.html
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/slick.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

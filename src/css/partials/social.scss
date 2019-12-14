@@ -14,5 +14,11 @@
     margin: 0 5px;
     background-position: center;
     background-repeat: no-repeat;
+    background-color: #E3E2E2;
+    transition: all 0.3s;
+    border-radius: 50%;
+    &:hover {
+      background-color: #C8A481;
+    }
   }
 }

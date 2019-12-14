@@ -75,6 +75,9 @@
   margin-bottom: 10px;
   transition: all 0.3s;
   outline: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   &:focus {
     background: white;
     transition: all 0.3s;

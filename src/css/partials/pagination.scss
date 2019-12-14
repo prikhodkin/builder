@@ -8,6 +8,7 @@
 }
 
 .pagination__item {
+  margin-right: 10px;
   a {
     font-style: normal;
     font-weight: 300;
@@ -24,6 +25,11 @@
     width: 40px;
     height: 40px;
     border-radius: 50%;
+    transition: all 0.3s;
+    border: 1px solid transparent;
+    &:hover {
+      border-color: #B4B4B4;
+    }
   }
 
   &--active {
