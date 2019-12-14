@@ -105,7 +105,9 @@
   line-height: 20px;
   /* identical to box height */
   text-transform: capitalize;
-
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   color: #999999;
   border: 1px solid #F3F3F3;
   width: 100%;
