@@ -1,0 +1,26 @@
+.service {
+  .media__item {
+    .main__btn {
+
+      display: flex;
+      width: 190px;
+      margin-top: 20px;
+      justify-content: center;
+
+      align-items: center;
+      font-size: 14px;
+      &::after {
+        content: '';
+        display: block;
+        background-image: url(../img/form_arrow.png);
+        width: 14px;
+        height: 14px;
+        margin-left: 10px;
+      }
+    }
+
+    .media__item-desc {
+      min-height: 80px;
+    }
+  }
+}

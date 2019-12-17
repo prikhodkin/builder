@@ -6,3 +6,4 @@ $('.main-menu__btn').on('click', function () {
 $('.filter__show').on('click', function () {
   $('.filter__form').slideToggle('slow');
 });
+
