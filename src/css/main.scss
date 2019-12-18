@@ -3,8 +3,11 @@
 @import "./partials/visually-hidden.scss";
 @import "./partials/slick.scss";
 @import "./partials/cmn-toggle-switch.scss";
+@import "partials/flextabs";
+@import "partials/flextabs-theme";
 @import "partials/scrollpane";
 @import "partials/header";
+@import "partials/a-header";
 @import "partials/main-menu";
 @import "partials/breadcrumbs";
 @import "partials/pagination";
@@ -20,6 +23,15 @@
 @import "partials/contacts";
 @import "partials/article";
 @import "partials/works";
+@import "partials/geography";
+@import "partials/principles";
+@import "partials/about-projects";
+@import "partials/about";
+@import "partials/about-preview";
+@import "partials/offer";
+@import "partials/similar";
+@import "partials/description";
+@import "partials/project";
 
 
 body {

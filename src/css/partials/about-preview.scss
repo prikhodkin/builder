@@ -1,0 +1,127 @@
+.about-preview {
+  margin-bottom: 40px;
+  .l {
+    position: relative;
+    .img {
+      content: '';
+      display: block;
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 100%;
+      height: 300px;
+    }
+    .txt {
+      display: flex;
+      width: 100%;
+      height: 100%;
+      justify-content: center;
+      align-items: center;
+      font-weight: 600;
+      font-size: 32px;
+      line-height: 55px;
+      /* identical to box height, or 94% */
+      text-transform: uppercase;
+      color: white;
+      background: rgba(159,159,159,0.5);
+      position: absolute;
+      left: 0;
+      top: 0;
+      text-align: center;
+    }
+  }
+  .r {
+    padding: 0 15px;
+    .bg__txt {
+      display: none;
+    }
+    h1 {
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 38px;
+      /* or 158% */
+
+      color: #000000;
+
+    }
+
+  }
+}
+
+.btn {
+  .main__btn {
+    display: flex;
+    width: 220px;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    box-shadow: 0 15px 34px rgba(0,0,0,.18);
+    margin-top: 40px;
+    margin-left: 0;
+    &::after {
+      content: '';
+      display: block;
+      background-image: url(../img/form_arrow.png);
+      width: 14px;
+      height: 14px;
+      margin-left: 10px;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+
+}
+
+
+@media (min-width: 1170px) {
+  .about-preview {
+    display: flex;
+    .l {
+      width: 50%;
+      min-width: 50%;
+      .img {
+        background-size: cover;
+        height: 500px;
+      }
+    }
+
+    .r {
+
+    }
+  }
+  .about-preview {
+    .r {
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding-left: 45px;
+      padding-right: calc(50% - 585px);
+      .bg__txt {
+        position: absolute;
+        font-weight: 600;
+        font-size: 120px;
+        line-height: 146px;
+        text-transform: lowercase;
+        display: block;
+        z-index: -1;
+        color: #F7F7F7;
+        top: calc(50% - 70px);
+        right: 0;
+
+      }
+    }
+
+    .l {
+      min-height: calc(100vh);
+      .txt {
+        padding-left: 10%;
+        padding-right: 10%;
+      }
+      .img {
+        height: 100% ;
+      }
+    }
+  }
+}

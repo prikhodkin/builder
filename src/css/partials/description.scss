@@ -1,0 +1,133 @@
+.description {
+  padding: 0 15px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  .l {
+    h2 {
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 22px;
+
+
+      color: #000000;
+    }
+  }
+
+  p {
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 20px;
+    /* or 167% */
+
+
+    color: #000000;
+
+  }
+}
+
+
+.description__btn {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  /* identical to box height */
+
+  color: #242323;
+
+  display: flex;
+  width: 100%;
+  border: 2px solid #CAA887;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 10px #CAA785;
+  height: 60px;
+  background: white;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s;
+  margin: 40px 0;
+  &:hover {
+    background: #CAA887;
+    color: white;
+  }
+}
+
+.desktop {
+  display: none;
+}
+
+.description__item {
+  a {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 25px;
+    /* identical to box height, or 179% */
+    text-transform: uppercase;
+
+    color: #000000;
+
+
+  }
+}
+
+@media (min-width: 768px) {
+  .description {
+    margin-bottom: 100px;
+  }
+
+  .description__list {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    border-bottom: 1px solid #DCDCDC;
+
+  }
+
+  .description__item {
+    margin-right: 30px;
+    a {
+      padding-bottom: 15px;
+      border-bottom: 3px solid transparent;
+      transition: all 0.3s;
+      display: block;
+      &:hover {
+        border-color: black;
+      }
+    }
+  }
+}
+
+@media (min-width: 1170px) {
+  .desktop {
+    display: flex;
+  }
+
+  .mobile {
+    display: none;
+  }
+
+  .description {
+    padding: 0;
+    margin-top: 100px;
+  }
+
+  .description__inner {
+    padding-left: calc(50% - 585px);
+    padding-right: calc(50% - 585px);
+    display: flex;
+    .l {
+      width: 470px;
+      min-width: 470px;
+      margin-right: 30px;
+    }
+    .r {
+      padding-top: 40px;
+      width: 470px;
+    }
+  }
+
+  .description__list {
+    padding-left: calc(50% - 585px);
+    padding-right: calc(50% - 585px);
+    margin-bottom: 55px;
+  }
+}
